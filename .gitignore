@@ -1,0 +1,8 @@
+node_modules/
+appmap.log
+__pycache__
+.env
+.tools/
+.gradle/
+build/
+.venv/

@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/inter";
+
+@theme {
+  --font-display: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* dark-ink base */
+  --color-ink-950: #08090b;
+  --color-ink-900: #0d0f13;
+  --color-ink-800: #14171d;
+  --color-ink-700: #1c2027;
+  --color-ink-600: #262b34;
+  --color-ink-500: #3a414d;
+  --color-ink-400: #5b6472;
+  --color-ink-300: #838d9b;
+  --color-ink-200: #b4bcc6;
+  --color-ink-100: #dde1e6;
+  --color-ink-50: #f4f6f8;
+
+  /* signal teal - brand / publisher accent */
+  --color-signal-950: #032e2a;
+  --color-signal-900: #054741;
+  --color-signal-800: #08655c;
+  --color-signal-700: #0b8478;
+  --color-signal-600: #0fa595;
+  --color-signal-500: #1ecfba;
+  --color-signal-400: #4fe3d1;
+  --color-signal-300: #8fefe2;
+  --color-signal-200: #c3f7ef;
+  --color-signal-100: #e3fbf6;
+
+  /* amber - advertiser accent */
+  --color-amber-950: #3d2405;
+  --color-amber-900: #5c3707;
+  --color-amber-800: #82500a;
+  --color-amber-700: #a8690d;
+  --color-amber-600: #d38812;
+  --color-amber-500: #f2a71c;
+  --color-amber-400: #f6bf51;
+  --color-amber-300: #f9d485;
+  --color-amber-200: #fce6b8;
+  --color-amber-100: #fdf3dc;
+
+  /* status */
+  --color-good-500: #34d399;
+  --color-bad-500: #f87171;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-ink-950);
+  color: var(--color-ink-100);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-signal-700);
+  color: var(--color-ink-950);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
